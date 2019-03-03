@@ -1,15 +1,25 @@
 // use object to organize variables. Objects are bigger buckets to hold other buckets (or variables)
-var obj = {
-    num: 1,
-    str: "hello world",
-    "12hello": 'asdf',
+var obj1 = {
+    name: "Bob",
+    gender: "male",
+    height: 7,
+},
+var obj2 = {
+    name: "Jill",
+    gender: "female",
+    height: 5.5,
+},
+var obj3 = {
+    name: "Sam",
+    gender: "male",
+    height: 6,
 }
 
 // dot notation
-console.log(obj.num)
+// console.log(obj.num)
 
 // bracket notation
-console.log(obj["12hello"])
+// console.log(obj["12hello"])
 
 // nesting objects withing objects
 /*var iceCreamStore = {
@@ -83,3 +93,37 @@ fuction myFunc(input){
 */
 
 // a change, how slow or fast is this?
+/*var user = {
+    name: "Billy",
+    age: 18,
+    email: "billy123@billy.com"
+  }
+  const a = user.name;
+  console.log(a)
+
+function getName(user){
+    return a;
+  }
+  
+  const b = getName();
+  console.log(b);
+*/
+
+/* var user = {
+    name: "Billy",
+    age: 18,
+    email: "billy123@billy.com"
+  }
+  
+
+function getName(user){
+    return user.name;
+  }
+  
+  const b = getName(user);
+  console.log(b);
+*/
+
+// var myCar = null
+// console.log(myCar)
+
