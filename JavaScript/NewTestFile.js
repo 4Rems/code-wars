@@ -1,5 +1,5 @@
 // use object to organize variables. Objects are bigger buckets to hold other buckets (or variables)
-var obj1 = {
+/*var obj1 = {
     name: "Bob",
     gender: "male",
     height: 7,
@@ -22,6 +22,7 @@ var obj3 = {
 // console.log(obj["12hello"])
 
 // nesting objects withing objects
+  */
 /*var iceCreamStore = {
     orders: {
         tom: {
@@ -127,3 +128,85 @@ function getName(user){
 // var myCar = null
 // console.log(myCar)
 
+/*var food = "pizza";
+function favFood(){
+  return `My favorite food is ${food}.`;
+}
+
+var a = favFood(food);
+console.log(a);
+
+var firstName = "Jeremy";
+var lastName = "Robertson";
+
+function createName(firstName, lastName){
+  return firstName + " " + lastName;
+}
+
+var a = createName(firstName, lastName);
+console.log(a);  */
+
+/*var age = 20;
+
+function isOldEnough(){
+  if (age > 21){
+    return "old enough";
+  }
+  else{
+    return "not yet";
+  }
+}
+
+var a = isOldEnough();
+console.log(a);
+*/
+
+/*
+var user = {
+  name: "Tiffany",
+  total: 50
+}
+
+
+function makePurchase (priceOfItem){
+  if (priceOfItem <= user.total){
+    user.total = user.total - priceOfItem;
+    return user.total
+  }
+  else if (priceOfItem > user.total){
+    return "not enough funds";
+  }
+  else
+    return ;
+}
+
+const a = makePurchase(20);
+console.log(a);
+*/
+
+var hunger;
+var fatigue;
+
+function eat(){
+  hunger = "gone";
+  return "yum yum";
+}
+
+function sleep(){
+  fatigue = "gone";
+  return "zzz zzz zzz";
+}
+
+function decisionMaker (hungry, tired){
+  if (hungry === true && tired === false){
+    return eat();
+  }
+  else if (hungry === false && tired === true){
+    return sleep();
+  }
+  else
+    return "undecided";
+}
+
+const a = decisionMaker(true, false);
+console.log(a);
